@@ -1,0 +1,28 @@
+CREATE TABLE PRODUCENT
+(
+	Prc_Id int identity(1,1) PRIMARY KEY,
+	Prc_Kod varchar(20),
+	Prc_Nazwa varchar(200),
+	Prc_DataZalozenia date,
+	Prc_Kraj varchar(100),
+	Prc_KrajISO varchar(5),
+	Prc_IloscPracownikow int,
+	Prc_KapitalZakladowy decimal(18,2),
+	Prc_InsertDate datetime DEFAULT GETDATE(),
+	Prc_UpdateDate datetime
+)
+
+CREATE TABLE PRODUKT
+(
+	Prd_Id int identity(1,1) PRIMARY KEY,
+	Prd_ProducentId int,
+	Prd_Nazwa varchar(100),
+	Prd_Kolor varchar(100),
+	Prd_CenaNetto decimal(18,2),
+	Prd_CenaBrutto decimal(18,2)
+
+	CONSTRAINT FK_ProducentId FOREIGN KEY (Prd_ProducentID)     
+    REFERENCES PRODUCENT (Prc_ID)     
+    ON DELETE SET NULL
+    ON UPDATE SET NULL    
+)
