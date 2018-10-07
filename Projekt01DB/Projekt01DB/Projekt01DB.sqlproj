@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>ContosoDataBase</Name>
+    <Name>Projekt01DB</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{319c137d-7de9-4d13-862c-1a875e8989a7}</ProjectGuid>
+    <ProjectGuid>{3da41458-d637-4aaf-930b-c3d0e5bc7b2f}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>ContosoDataBase</RootNamespace>
-    <AssemblyName>ContosoDataBase</AssemblyName>
+    <RootNamespace>Projekt01DB</RootNamespace>
+    <AssemblyName>Projekt01DB</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -57,46 +57,5 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="dbo\" />
-    <Folder Include="dbo\Tables\" />
-    <Folder Include="dbo\Views\" />
-    <Folder Include="dbo\Stored Procedures\" />
-    <Folder Include="Security\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="dbo\Tables\FactStrategyPlan.sql" />
-    <Build Include="dbo\Tables\FactSalesQuota.sql" />
-    <Build Include="dbo\Tables\FactSales.sql" />
-    <Build Include="dbo\Tables\FactOnlineSales.sql" />
-    <Build Include="dbo\Tables\FactITSLA.sql" />
-    <Build Include="dbo\Tables\FactITMachine.sql" />
-    <Build Include="dbo\Tables\FactInventory.sql" />
-    <Build Include="dbo\Tables\FactExchangeRate.sql" />
-    <Build Include="dbo\Tables\DimStore.sql" />
-    <Build Include="dbo\Tables\DimScenario.sql" />
-    <Build Include="dbo\Tables\DimSalesTerritory.sql" />
-    <Build Include="dbo\Tables\DimPromotion.sql" />
-    <Build Include="dbo\Tables\DimProductSubcategory.sql" />
-    <Build Include="dbo\Tables\DimProductCategory.sql" />
-    <Build Include="dbo\Tables\DimProduct.sql" />
-    <Build Include="dbo\Tables\DimOutage.sql" />
-    <Build Include="dbo\Tables\DimMachine.sql" />
-    <Build Include="dbo\Tables\DimGeography.sql" />
-    <Build Include="dbo\Tables\DimEntity.sql" />
-    <Build Include="dbo\Tables\DimEmployee.sql" />
-    <Build Include="dbo\Tables\DimDate.sql" />
-    <Build Include="dbo\Tables\DimCustomer.sql" />
-    <Build Include="dbo\Tables\DimCurrency.sql" />
-    <Build Include="dbo\Tables\DimChannel.sql" />
-    <Build Include="dbo\Tables\DimAccount.sql" />
-    <Build Include="dbo\Views\V_ProductForecast.sql" />
-    <Build Include="dbo\Views\V_OnlineSalesOrderDetail.sql" />
-    <Build Include="dbo\Views\V_OnlineSalesOrder.sql" />
-    <Build Include="dbo\Views\V_CustomerPromotion.sql" />
-    <Build Include="dbo\Views\V_CustomerOrders.sql" />
-    <Build Include="dbo\Views\V_Customer.sql" />
-    <Build Include="dbo\Stored Procedures\P_FactStrategyPlan.sql" />
-    <Build Include="dbo\Stored Procedures\P_FactSalesQuota.sql" />
-    <Build Include="Security\testowy.sql" />
   </ItemGroup>
 </Project>
