@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>ContosoDB</Name>
+    <Name>ContosoDataBase</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{4b2e7ce4-5ea8-4855-a9a6-7de888c6a54c}</ProjectGuid>
+    <ProjectGuid>{319c137d-7de9-4d13-862c-1a875e8989a7}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>ContosoDB</RootNamespace>
-    <AssemblyName>ContosoDB</AssemblyName>
+    <RootNamespace>ContosoDataBase</RootNamespace>
+    <AssemblyName>ContosoDataBase</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
