@@ -61,6 +61,7 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Views\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Security\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\FactStrategyPlan.sql" />
@@ -96,5 +97,6 @@
     <Build Include="dbo\Views\V_Customer.sql" />
     <Build Include="dbo\Stored Procedures\P_FactStrategyPlan.sql" />
     <Build Include="dbo\Stored Procedures\P_FactSalesQuota.sql" />
+    <Build Include="Security\testowy.sql" />
   </ItemGroup>
 </Project>
