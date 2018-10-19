@@ -11,5 +11,3 @@
     CONSTRAINT [FK_ProducentId] FOREIGN KEY ([Prd_ProducentId]) REFERENCES [dbo].[PRODUCENT] ([Prc_Id]) ON DELETE SET NULL ON UPDATE SET NULL
 );
 
-
-
