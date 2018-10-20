@@ -75,5 +75,7 @@
     <Build Include="dbo\Tables\Album.sql" />
     <Build Include="dbo\Tables\den_Track.sql" />
     <Build Include="dbo\Views\v_Track.sql" />
+    <Build Include="dbo\Tables\den_Customer.sql" />
+    <Build Include="dbo\Views\v_Customer.sql" />
   </ItemGroup>
 </Project>

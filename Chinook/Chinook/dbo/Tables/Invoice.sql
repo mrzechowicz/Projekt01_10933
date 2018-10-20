@@ -9,8 +9,11 @@
     [BillingPostalCode] NVARCHAR (10)   NULL,
     [Total]             NUMERIC (10, 2) NOT NULL,
     CONSTRAINT [PK_Invoice] PRIMARY KEY CLUSTERED ([InvoiceId] ASC),
-    CONSTRAINT [FK_InvoiceCustomerId] FOREIGN KEY ([CustomerId]) REFERENCES [dbo].[Customer] ([CustomerId])
+    CONSTRAINT [FK_InvoiceCustomerId] FOREIGN KEY ([CustomerId]) REFERENCES [dbo].[Customer] ([CustomerId]),
+    CONSTRAINT [FK_InvoiceDenCustomerCustomerID] FOREIGN KEY ([CustomerId]) REFERENCES [dbo].[den_Customer] ([CustomerId])
 );
+
+
 
 
 GO
